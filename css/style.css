@@ -37,6 +37,7 @@
 .home .header .nav{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .home .header .nav ul{
@@ -72,6 +73,10 @@
     transition: ease-in 0.2s;
     
 }    
+
+#btn-mobile{
+    display: none;
+}
 
 /*****************************************
 ***************HOME - BANNER**************
@@ -467,6 +472,19 @@
     }
     .services .boxes{
         display: block
+    }
+
+    .about .experience{
+        width: 100%;
+    }    
+}
+
+@media (max-width: 1068px){
+    #btn-mobile{
+        display: flex;
+    }
+    .home .header .nav{
+        display: none;
     }
 }
     
