@@ -34,6 +34,11 @@
     padding: 30px 0;
 }
 
+.menu-mobile{
+    display: flex;
+    justify-content: space-between;
+}
+
 .home .header .nav{
     display: flex;
     justify-content: center;
@@ -480,11 +485,17 @@
 }
 
 @media (max-width: 1068px){
-    #btn-mobile{
+    #home #btn-mobile{
         display: flex;
+        position: relative;
+        z-index: 9999999;
     }
     .home .header .nav{
         display: none;
+    }
+
+    .header .logo{
+        display: flex;
     }
 }
     
