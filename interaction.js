@@ -1,7 +1,6 @@
 const btnMobile = document.getElementById('btn-mobile');
-function toogleMenu(){
-    const menuMobile = document.getElementsById('menuMobile');
-    nav.classList.toogleMenu('active');
-
+function toggleMenu(){
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
 }
-btnMobile.addEventListener('click', toogleMenu);
+btnMobile.addEventListener('click', toggleMenu);

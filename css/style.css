@@ -34,30 +34,35 @@
     padding: 30px 0;
 }
 
-.menu-mobile{
+#nav{
     display: flex;
     justify-content: space-between;
+    
+}
+#img-mobile{
+    margin-left: 40px;
+    display: none;
 }
 
-.home .header .nav{
+.home .header #nav{
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.home .header .nav ul{
+.home .header #nav ul{
     display: flex;
     list-style: none;
 }
 
-.home .header .nav ul li{
+.home .header #nav ul li{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 150px;
 }
 
-.home .header .nav ul li a{
+.home .header #nav ul li a{
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -67,11 +72,11 @@
     transition: ease-out 0.2s;
 }
 
-.home .header .nav ul li .logo{
+.home .header #nav ul li .logo{
     margin: 0 30px;
 }
 
-.home .header .nav ul li a:hover{
+.home .header #nav ul li a:hover{
     border-bottom: 1px solid var(--color-primary);
     color: var(--color-primary);
     transition: border 0.2s ease;
@@ -79,8 +84,9 @@
     
 }    
 
-#btn-mobile{
+#btn-mobile {
     display: none;
+    margin-right: 40px;
 }
 
 /*****************************************
@@ -458,9 +464,8 @@
 ***************RESPONSIVIDADE****************
 ******************************************/
 
-.menu-mobile img{
-    display: none;
-}
+
+
 
 @media (max-width: 1170px ) {
     .experience img {
@@ -490,21 +495,49 @@
 }
 
 @media (max-width: 1068px){
-    #home #btn-mobile{
-        display: flex;
-        position: relative;
-        z-index: 9999999;
-        margin-right: 30px;
-    }
-    .home .header .nav{
+     #btn-mobile{
+         display: block;
+     }
+     #img-mobile{
+         display: block;
+     }
+     #nav #menu img{
         display: none;
     }
-
-    .header .logo{
+     #nav #menu{
+         display: block;
+         position: absolute;
+         width: 100%;
+         top: 200px;
+         right: 0px;
+         height: 0px;
+         transition: .6s;
+         background-color: var(--color-secundary);
+         z-index: 1000;
+         visibility: hidden;
+         overflow-y: hidden;
+     }
+     .home .header #nav{
         display: flex;
-        margin-left: 30px;
-    }
+        justify-content: space-between;
+        width: 100%;
+     }
+
+     #nav.active #menu{
+         height: calc(100vh - 70px);
+         visibility: visible;
+         overflow-y: auto;
+     }
+     #menu a{
+         padding: 1rem 0;
+         margin:  0 1rem;
+         border-bottom: 2px solid var(--color-third);
+         justify-content: left;
+     }
     
-}
     
 
+
+    
+
+}
