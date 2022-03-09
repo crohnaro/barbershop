@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --color-primary: #917758;
     --color-secundary: #a38f78;
@@ -11,6 +14,25 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-third);
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 .container{
     width: 70%;
@@ -506,9 +528,8 @@
      #nav #menu{
          display: block;
          position: absolute;
-         width: 100%;
-         top: 200px;
-         right: 0px;
+         width: 50%;
+         top: 0px;
          height: 0px;
          transition: .6s;
          background-color: var(--color-secundary);
@@ -523,12 +544,17 @@
      }
 
      #nav.active #menu{
-         height: calc(100vh - 70px);
+         height: 100vh;
          visibility: visible;
          overflow-y: auto;
      }
      .home .header #nav ul li{
         justify-content: left;
+        margin-top:10px
+    }
+    
+    .home .header #nav ul li:first-child{
+        margin-top: 200px;
     }
 
     .home .header #nav ul li a{
