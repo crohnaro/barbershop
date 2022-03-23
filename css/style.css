@@ -597,6 +597,65 @@ html{
     .location .head .info {
         display: none;
     }
-    
+    .appointment .personal-data{
+        display: block;
+    }
+    .appointment h2{
+        text-align: center;
+        font-size: 35px;
+    }
 
+    .home .banner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -250px;
+        margin-top: -75px;
+        color: white;
+        text-align: center;
+    }
+
+    .home .banner h1{
+        font-size: 80px;
+    }
+    .gallery .gallery-wrapper {
+        display: block;
+        height: 100%;
+    }
+    .gallery .gallery-wrapper div{
+        width: 100%;
+    }    
+
+
+}
+@media (max-width: 360px){
+    .home .banner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -200px;
+        margin-top: -75px;
+        color: white;
+        text-align: center;
+    }
+    .home .banner h1{
+        font-size: 60px;
+    }
+    .home .banner .slogan1{
+        letter-spacing: 2px;
+        margin-left: 25px;
+    }
+    .home .banner .slogan2{
+        letter-spacing: 1px;
+        margin-left: 25px;
+    }
+
+    #services h2{
+        font-size: 35px;
+    }
+
+    #services img{
+        margin-left: -15px;
+    }
+    
 }
