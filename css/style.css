@@ -523,7 +523,7 @@ html{
      #nav #menu{
          display: block;
          position: absolute;
-         width: 50%;
+         width: 100%;
          top: 0;
          left: -100%;
          height: 100vh;
@@ -532,6 +532,13 @@ html{
          z-index: 1000;
          
      }
+
+     #nav #menu li{
+         margin-top: 5px;
+     }
+     #nav #menu li:first-child{
+        margin-top: 120px;
+    }
      .home .header #nav{
         display: flex;
         justify-content: space-between;
@@ -572,8 +579,10 @@ html{
         border-color: transparent;
     }
     #menu-hamburguer{
+        position: absolute;
         width: 30px;
         border-top: 4px solid;
+        z-index: 2000;
     }
     #nav.active #menu-hamburguer::after{
         transform: rotate(-135deg);
@@ -628,7 +637,7 @@ html{
 
 
 }
-@media (max-width: 360px){
+@media (max-width: 417px){
     .home .banner{
         position: absolute;
         top: 50%;
@@ -639,7 +648,7 @@ html{
         text-align: center;
     }
     .home .banner h1{
-        font-size: 60px;
+        font-size: 50px;
     }
     .home .banner .slogan1{
         letter-spacing: 2px;
