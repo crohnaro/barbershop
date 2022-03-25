@@ -637,7 +637,7 @@ html{
 
 
 }
-@media (max-width: 417px){
+@media (max-width: 425px){
     .home .banner{
         position: absolute;
         top: 50%;
@@ -665,6 +665,10 @@ html{
 
     #services img{
         margin-left: -15px;
+    }
+
+    #img-mobile{
+        visibility: hidden;
     }
     
 }
