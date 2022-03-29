@@ -679,4 +679,29 @@ html{
     #about .experience h2{
         font-size: 25px;
     }
+
+    #services img{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 360px){
+    #home .banner{
+        margin-left: -150px;
+    }
+    #home .banner h1{
+        font-size: 28px;
+    }
+
+    #home .banner .slogan1{
+        font-size: 10px;
+    }
+    #home .banner .slogan2{
+        font-size: 10px;
+    }
+
+    #appointment h2{
+        font-size: 25px;
+    }
+
 }
