@@ -703,5 +703,7 @@ html{
     #appointment h2{
         font-size: 25px;
     }
-
+    #services .boxes .box img{
+        width: 100%;
+    }
 }
