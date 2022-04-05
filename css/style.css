@@ -157,6 +157,9 @@ html{
 .about .timing{
     width: 33%;
     background-image: url(../images/brush-big.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-position:center;
     padding: 20px;
     position: relative;
     top: -50px;
@@ -491,10 +494,15 @@ html{
         display: none;
     }
 
-    .timing {
-        display: none;
+    #about .container{
+        display: block;
     }
 
+    #about .timing {
+        width: 100%;
+    }
+
+    
     .experience{
         align-items: center;
         text-align: center;
@@ -671,8 +679,7 @@ html{
     #img-mobile{
         visibility: hidden;
     }
-    
-}@media (max-width: 425px){
+
     #about .experience{
         margin-left: 0;
     }
@@ -683,11 +690,10 @@ html{
     #services img{
         margin-left: 0;
     }
-}
-
+}    
 @media (max-width: 360px){
     #home .banner{
-        margin-left: -150px;
+        margin-left: -145px;
     }
     #home .banner h1{
         font-size: 28px;
@@ -703,7 +709,25 @@ html{
     #appointment h2{
         font-size: 25px;
     }
-    #services .boxes .box img{
-        width: 100%;
+
+    #appointment{
+        height: 120vh;
     }
+    #services .boxes .box img{
+        width: 70%;
+    }
+
+    .home .header #nav ul li a {
+        font-size: 20px;
+    }
+
+    #about .timing .overlay h3{
+        font-size: 20px;
+        margin-left: -3px;
+    }
+
+    .about .timing .icon-cut {
+        margin-left: 5px;
+    }
+
 }
