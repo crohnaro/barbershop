@@ -14,7 +14,7 @@
 
 
 <div align="center"> <h2> Status: Em desenvolvimento </h2> 
-<img width="70px" src="https://cdn-icons.flaticon.com/png/512/3242/premium/3242257.png?token=exp=1652660404~hmac=d311fd1d9fe60e99be2ee4ab0dcdab47">
+<img width="70px" src="https://www.svgrepo.com/show/158167/web-development.svg">
 </div>
 
 
